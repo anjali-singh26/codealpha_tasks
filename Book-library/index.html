@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Book Library</h1>
+        <button class="menu-icon">&#9776;</button>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#search">Search</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#history">Borrowing History</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="dark-mode-toggle">Toggle Dark Mode</button></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home" class="hero">
+            <h2>Welcome to My Book Library</h2>
+            <p>Organize and manage your personal book collection with ease.</p>
+        </section>
+      <section class="parallax">
+    <div class="parallax-content">
+        <h2>Discover New Worlds</h2>
+        <p>Immerse yourself in the magic of books</p>
+    </div>
+</section>
+
+<section class="featured-books">
+    <h2>Featured Books</h2>
+    <div class="featured-books-list"></div>
+</section>
+
+<section class="reading-challenge">
+    <h2>Reading Challenge</h2>
+    <p>Books read: <span id="books-read">0</span> / <span id="challenge-goal">10</span></p>
+    <button id="update-challenge">Update Challenge</button>
+</section>
+        
+        <section id="search">
+            <h2>Search for Books</h2>
+            <input type="text" id="search-input" placeholder="Search for books...">
+            <div class="book-list">
+                <!-- Book items will be inserted here  -->
+            </div>
+        </section>
+        
+        <section id="categories">
+            <h2>Categories</h2>
+            <div class="category-list">
+                <!-- Categories will be inserted here  -->
+            </div>
+        </section>
+        
+        <section id="history">
+            <h2>Borrowing History</h2>
+            <div class="history-list">
+                <!-- Borrowing history will be inserted here  -->
+            </div>
+        </section>
+    </main>
+    
+    <footer id="contact">
+        <h2>Contact Us</h2>
+        <p>For inquiries, reach out to <a href="mailto:info@booklibrary.com">info@booklibrary.com</a></p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
